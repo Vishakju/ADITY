@@ -133,7 +133,7 @@ printf("\n\nPAYMENT PROCESSING\nLOADING");
            printf(".");
         }
 menu_invalid:
-printf("\nPAYMENT SUCCESSFUL\nPRESS 1 to go to main menu,o to exit :");
+printf("\nPAYMENT SUCCESSFULL\nPRESS 1 to go to main menu,o to exit :");
 scanf("%d",&mainno);
 if(mainno==1)
     menu;
@@ -168,7 +168,7 @@ void go()
         {  fordelay(100000000);
            printf(".");
         }
-      printf("\n\n\tTHIS PROJECT IS DEVELOPED BY ->Mrs.VandanA CP[GuideD,AssistanT ProfessoR].\n\t\t\t\t     ->VishaL ReddY,VishaK JU,PavaN UmmadI.\n\t\t\t\t     ->UsinG C# LanguagE.\n\n\t\t\t\t");
+      printf("\n\n\tTHIS PROJECT IS DEVELOPED BY ->Mrs.VandanA CP[GuideD,AssistanT ProfessoR].\n\t\t\t\t     ->VishaK JU\n\t\t\t\t     ->UsinG C# LanguagE.\n\n\t\t\t\t");
     for(i=0;i<=50;i++)
         {  fordelay(10000000);
            printf(".");
@@ -287,16 +287,16 @@ int k=99;
  system("cls");
  loading();
  ad_tiy();
- printf("\n\t\t\t****ADVISITMENTS****");
- printf("\n\t\tLIST OF ADDVISITMENTS");
- printf("\n\n1.BILL BOARDS ADVISITMENTS\n\n2.BUS ADVISITMENTS\n\n3.EXIT\n\n\t\t\t\t\tEnter Your Choice:");
+ printf("\n\t\t\t****ADVERTISEMENTS****");
+ printf("\n\t\tLIST OF ADVERTISEMENTS");
+ printf("\n\n1.BILL BOARDS ADVERTISEMENTS\n\n2.BUS ADVERTISEMENTS\n\n3.EXIT\n\n\t\t\t\t\tEnter Your Choice:");
  scanf("%d",&select);
  if(select==1)
 {system("cls");
 ad_tiy();
- printf("\n\t\t\t\t\t****ADVISITMENTS****");
- printf("\n\t\t\t\t****BILL BOARDS ADDVISITMENTS****");
- printf("\n\tSELECT THE LOCATION WHICH YOU WANT TO ADDVISITS YOUR COMPANY OR PRODUCTS:");
+ printf("\n\t\t\t\t\t****ADVERTISEMENTS****");
+ printf("\n\t\t\t\t****BILL BOARDS ADVERTISEMENTS****");
+ printf("\n\tSELECT THE LOCATION WHICH YOU WANT TO ADVERTISE YOUR COMPANY OR PRODUCTS:");
  view_list();
  id=fopen("recordg.txt","a+");
  account_no2:
@@ -309,12 +309,12 @@ while(fscanf(ptr,"%d %s %d/%d/%d %d %s %s %lf %s %f %d/%d/%d %lf\n",&add.acc_no,
             printf("\nSelect another location");
             fordelay(1000000000);
             goto account_no2;
-    }}
+    }}/
 add.gl_id==check.gl_id;
 fprintf(id,"%lf",add.gl_id);
 fclose(id);
 printf("\n****Selected Successfully****");
-printf("\n\tDo You Want To Advisits Once Again in Different location\n1.yes\n2.No\nEnter your choice:");
+printf("\n\tDo You Want To Advertise Once Again in Different location\n1.yes\n2.No\nEnter your choice:");
 scanf("%d",&again);
 if(again==1)
 {list();
@@ -327,8 +327,8 @@ go();
 else if(select==2)
  system("cls");
 ad_tiy();
-printf("\n\n\t\t\t\t\t****BUS ADDVISITMENTS****");
- printf("\n\n\tSELECT THE DEPOT WHICH YOU WANT TO ADDVISITS YOUR COMPANY OR PRODUCTS:");
+printf("\n\n\t\t\t\t\t****BUS ADVERTISEMENTS****");
+ printf("\n\n\tSELECT THE DEPOT WHICH YOU WANT TO ADVERTISE YOUR COMPANY OR PRODUCTS:");
  printf("\n\n\tDEPOTS LOCATIONS:\n\n\t1.BANGALORE\n\n\t2.MYSORE\n ");
 scanf("%d",&bus_select);
 if(bus_select==1)
